@@ -1,0 +1,36 @@
+components:
+  schemas:
+    Response:
+      type: object 
+      properties:
+        meta:
+          $ref: '#/components/schemas/Meta'
+
+    Meta:
+      type: object
+      properties:
+        response_at:
+          type: string
+          format: date-time
+
+    SelfHref:
+      type: object
+      properties:
+        href:
+          type: string
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+        message:
+          type: string
+
+    CustomerItem:
+      type: object
+      properties:
+        id:
+          type: integer
+        href:
+          type: string

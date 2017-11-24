@@ -1,0 +1,29 @@
+components:
+  responses:
+
+    Standard400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            allOf:
+            - $ref: 'schemas.yaml#/components/schemas/Error'
+            - $ref: 'schemas.yaml#/components/schemas/Response'
+
+    Standard401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            allOf:
+            - $ref: 'schemas.yaml#/components/schemas/Error'
+            - $ref: 'schemas.yaml#/components/schemas/Response'
+
+    Standard403:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            allOf:
+            - $ref: 'schemas.yaml#/components/schemas/Error'
+            - $ref: 'schemas.yaml#/components/schemas/Response'

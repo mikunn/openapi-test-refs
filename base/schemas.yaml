@@ -1,0 +1,5 @@
+components:
+  schemas:
+    Base:
+      allOf:
+      - $ref: '../schemas.yaml#/components/schemas/SelfHref'

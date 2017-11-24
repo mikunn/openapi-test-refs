@@ -1,0 +1,18 @@
+openapi: 3.0.0
+
+info:
+  title: Test API
+  version: 0.1.0
+
+x-tagGroups:
+  - name: API specification
+    tags:
+      - Base
+      - Me
+
+paths:
+  '/base':
+    $ref: 'base/paths.yaml#/paths/~1base'
+
+  '/me':
+    $ref: 'me/paths.yaml#/paths/~1me'

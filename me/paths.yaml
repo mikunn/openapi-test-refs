@@ -1,0 +1,22 @@
+paths:
+  '/me':
+    get:
+      tags:
+        - Me
+      summary: Summary of Me
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                - $ref: 'schemas.yaml#/components/schemas/MeOut'
+                - $ref: '../schemas.yaml#/components/schemas/Response'
+        '400':
+          $ref: '../responses.yaml#/components/responses/Standard400'
+        '401':
+          $ref: '../responses.yaml#/components/responses/Standard401'
+        '403':
+          $ref: '../responses.yaml#/components/responses/Standard403'
+

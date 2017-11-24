@@ -1,0 +1,11 @@
+components:
+  schemas:
+    Me:
+      customer:
+        $ref: '../schemas.yaml#/components/schemas/CustomerItem'
+
+    MeOut:
+      allOf:
+      - $ref: '../schemas.yaml#/components/schemas/SelfHref'
+      - $ref: '#/components/schemas/Me'
+
